@@ -1,4 +1,4 @@
-# 全栈投票实战项目
+﻿# 全栈投票实战项目
 * 基于nodejs && express的后台服务
 * 基于zepto的前端网页构建
 * 前后数据分离
@@ -39,7 +39,7 @@
 克隆项目
 
 ```
-> $ git clone https://git.coding.net/canfoo/vote.git
+> $ git clone https://github.com/yutaiwei/vote-demo.git
 ```
 在vote目录下安装依赖包
 
