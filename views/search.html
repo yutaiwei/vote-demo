@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+	<title>搜索结果页</title>
+	<link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+	<div class="content">
+        <div class="lists">
+            <div class="coming-box">
+                <ul class="coming">
+                    <!--<li>
+                        <div class="head">
+                            <a href="#"><img src="/images/girl.png" alt=""></a>
+                        </div>
+                        <div class="up">
+                        	<div class="vote">
+                        		<span>10票</span>
+                        	</div>
+                        	<div class="btn">
+                        		投TA一票
+                        	</div>
+                        </div>
+                        <div class="descr">
+                            <h3>江疏影</h3>
+                            <p>谁比我美？</p>
+                        </div>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+	</div>
+</body>
+<script src="/javascripts/zepto.min.js"></script>
+<script src="/javascripts/vote.js"></script>
+<!--<script>
+	var searchContent = JSON.parse(localStorage.getItem('searchContent'));
+$.ajax({
+	type:'get',
+	url:'/vote/index/search?content='+searchContent,
+	success:function (data) {
+		data=JSON.parse(data);
+		$('.coming').html(user(data.data));
+	}
+});
+	function user(objs) {
+		var str = '';
+		for (var i = 0; i < objs.length; i++) {
+			str += '<li>'
+					+ '<div class="head">'
+					+ '<a href="/vote/detail/' + objs[i].id + '">' + '<img src="' + objs[i].head_icon + '" alt="">' + '</a>'
+					+ '</div>'
+					+ '<div class="up">'
+					+ '<div class="vote">' + '<span>' + objs[i].vote + '票</span>' + '</div>'
+					+ '<div class="btn" id=' + objs[i].id + '>' + '投TA一票' + '</div>'
+					+ '</div>'
+					+ '<div class="descr">'
+					+ '<a href="/vote/detail/?id=' + objs[i].id + '">'
+					+ '<div>' + '<span>' + objs[i].username + '</span>' + '<span>|</span>' + '<span>编号#' + objs[i].id + '</span>'
+					+ '</div>'
+					+ '<p>' + objs[i].description + '</p>'
+					+ '</a>'
+					+ '</div>'
+					+ '</li>';
+		}
+		return str
+	}
+</script>-->
+</html>
